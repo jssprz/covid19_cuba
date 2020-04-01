@@ -50,6 +50,9 @@ position:absolute;
 .accordion .card-header{
   padding: 0 !important;
 }
+.page-footer{
+  padding-left: 0 !important;
+}
   </style>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -586,7 +589,8 @@ position:absolute;
             <div class="card-body">
               <h2 class="card-title">Importante-1:</h2>
               <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
-              <p class="card-text">Definimos el tiempo cero al momento en que un territorio alcanza un caso por millón de habitante. Esto tiene por objetivo poder comparar de mejor forma la evolución de los países desde que tienen una curva epidémica bien establecida. En este sentido, consideramos que comparar desde el primer caso en cada territorio no produce comparaciones justas, ya que en muchos países los primeros casos fueron descartados dado el desconocimiento que se tenía sobre COVID-19.</p>
+              <p class="card-text">Definimos el tiempo cero al momento en que un territorio alcanza un caso por millón de habitante. Esto tiene por objetivo poder comparar de mejor forma la evolución de los países desde que tienen una curva epidémica bien establecida. En este sentido, consideramos que comparar desde el primer caso en cada territorio no produce comparaciones justas, ya que en muchos países los primeros casos fueron descartados dado el desconocimiento que se tenía sobre COVID-19.
+              </p>
               <!--<a href="#" class="card-link">Card link</a>
               <a href="#" class="card-link">Another link</a>-->
             </div>
@@ -595,7 +599,8 @@ position:absolute;
             <div class="card-body">
               <h2 class="card-title">Importante-2:</h2>
               <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
-              <p class="card-text">Las curvas a escala logarítmica (log) permiten analizar el crecimiento exponencial del número de infectados por millón de habitantes en cada uno de los territorios. Si la curva del territorio se comporta como una línea, quiere decir que la cantidad de infectados crece exponencialmente. Dado esto, es fácil notar que Cuba ha mostrado intervalos de crecimiento exponencial.</p>
+              <p class="card-text">Las curvas a escala logarítmica (log) permiten analizar el crecimiento exponencial del número de infectados por millón de habitantes en cada uno de los territorios. Si la curva del territorio se comporta como una línea, quiere decir que la cantidad de infectados crece exponencialmente. Dado esto, es fácil notar que Cuba ha mostrado intervalos de moderado crecimiento exponencial.
+              </p>
               <!--<a href="#" class="card-link">Card link</a>
               <a href="#" class="card-link">Another link</a>-->
             </div>
@@ -610,13 +615,24 @@ position:absolute;
             </div>
           </div>
           <div class="card" style="margin-top: 2rem; width: 100%;">
-        <div class="card-body">
-          <h2 class="card-title">Importante-4:</h2>
-          <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
-          <p class="card-text">Esto no es ni un análisis ni sirve para hacer proyecciones (a falta de otras miles de variables), son solo datos y comparaciones ;)</p>
-          <!--<a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>-->
-        </div>
+            <div class="card-body">
+              <h2 class="card-title">Importante-4:</h2>
+              <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+              <p class="card-text">Esto no es ni un análisis ni sirve para hacer proyecciones (a falta de otras miles de variables), son solo datos y comparaciones ;)</p>
+              <!--<a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>-->
+            </div>
+          </div>
+          <div class="card" style="margin-top: 2rem; width: 100%;">
+            <div class="card-body">
+              <h2 class="card-title">Referencias</h2>
+              <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+              <p class="card-text" href="">
+                Nuestros datos y código están abiertos públicamente.
+              </p>
+              <a href="https://docs.google.com/spreadsheets/d/1F7BWnqdgX1kHZrR9cSDQUznA6Dk5O3m3pPZMVF8OBgU/edit#gid=0" class="card-link">Datos</a>
+              <a href="https://github.com/jssprz/covid19_cuba.git" class="card-link">Proyecto en GitHub</a>
+            </div>
           </div>
         </div>
       </div>
@@ -625,7 +641,7 @@ position:absolute;
   <!--Main layout-->
 
   <!--Footer-->
-  <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn">
+  <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-3 wow fadeIn">
 
     <!--Call to action-->
     <!--<div class="pt-4">
@@ -641,16 +657,22 @@ position:absolute;
     </div>-->
     <!--Call to action-->
 
-    <hr class="my-4">
+    <hr class="my-3">
 
     <!--Social icons -->
-    <!--<div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-        <i class="fab fa-facebook-f mr-3"></i>
+    <div class="pb-3">
+
+      <a href="https://twitter.com/jes_prz" target="_blank">
+        <i class="fab fa-twitter mr-3"></i>
       </a>
 
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
-        <i class="fab fa-twitter mr-3"></i>
+      <a href="https://github.com/jssprz/covid19_cuba.git" target="_blank">
+        <i class="fab fa-github mr-3"></i>
+      </a>
+
+      <!--
+      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+        <i class="fab fa-facebook-f mr-3"></i>
       </a>
 
       <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
@@ -669,14 +691,11 @@ position:absolute;
         <i class="fab fa-pinterest mr-3"></i>
       </a>
 
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-        <i class="fab fa-github mr-3"></i>
-      </a>
-
       <a href="http://codepen.io/mdbootstrap/" target="_blank">
         <i class="fab fa-codepen mr-3"></i>
       </a>
-    </div>-->
+      -->
+    </div>
     <!--Social icons-->
 
     <!--Copyright-->
