@@ -325,13 +325,12 @@ position:absolute;
       </div>
       <!--Grid row-->
 
-      <!-- 
       <div class="row wow fadeIn justify-content-md-center">
-        <!- -Grid column- ->
+        <!--Grid column-->
         <div class="col-7 mb-4">
-          <!- -Card- ->
+          <!--Card-->
           <div class="card" style="">
-            <!- -Card content- ->
+            <!--Card content-->
             <div class="card-body">
               <h2 class="card-title">Velocidad de incremento de casos en Cuba:</h2>
               <form class="form-inline">
@@ -345,11 +344,11 @@ position:absolute;
                 <b>Resultado:</b><span class="ml-2 mr-sm-2" id="exp-test-val-result"></span><b>-></b><span class="ml-2 mr-sm-2" id="exp-test-text-result"></span>
               </div>
             </div>
-            <!- -/.Card- ->
+            <!--/.Card-->
           </div>
-          <!- -Grid column- ->
+          <!--Grid column-->
         </div>
-      </div>-->
+      </div>
 
       <!-- Charts -->
       <div class="row wow fadeIn">
@@ -1220,17 +1219,15 @@ position:absolute;
       var days_select = $('#exp-test-days');
       var interval_select = $('#exp-test-interval');
 
-      for(var i=4; i<=new_cases.length; i++){
+      for(var i=6; i<=new_cases.length-1; i++)
         days_select.append('<option value="'+i+'">'+i+'</option>');
-      }
 
       days_select.on('change', function() {
         interval_select.empty();
         last_days = this.value;
-        for(var i=1; i<=this.value/2; i++){
+        for(var i=1; i<=this.value/3; i++)
           interval_select.append('<option value="'+i+'">'+i+'</option>');
-        }
-        if(interval_days<=this.value/2)
+        if(interval_days<=this.value/3)
           interval_select.val(interval_days).change();
         else
           interval_select.val(2).change();
@@ -1249,14 +1246,14 @@ position:absolute;
 
     function compute_exp_score(){
       if(last_days==0 || interval_days==0)
-        return
-      var interval_cases=0
-      var interval_scores=[]
+        return;
+      var interval_score=0;
+      var interval_scores=[];
       for(var i=1;i<=last_days;i++){
-        interval_cases += new_cases[new_cases.length-i];
+        interval_score += new_cases[new_cases.length-i] / accumulates[accumulates.length-i-1];
         if(i%interval_days==0){
-          interval_scores.push(interval_cases / accumulates[accumulates.length-i-1]);
-          interval_cases = 0;
+          interval_scores.push(interval_score / interval_days);
+          interval_score = 0;
         }
       }
       console.log(interval_scores)
@@ -1265,14 +1262,19 @@ position:absolute;
       var sum = 0
       for(var i=interval_scores.length-1; i>=0;i--){
         sum += interval_scores[i];
-        serie += accumulates[accumulates.length-(i+1)*interval_days-1] + ',  ';
+        serie += interval_scores[i].toFixed(2) + (i!=0 ? ',  ' : '');
+        //serie += accumulates[accumulates.length-(i+1)*interval_days-1] + ',  ';
       }
-      serie += accumulates[accumulates.length-1];
+      //serie += accumulates[accumulates.length-1];
         
       var result = (sum/interval_scores.length).toFixed(2);
       $('#exp-test-serie-result').text(serie);
       $('#exp-test-val-result').text(result);
-      if(result<1)
+      if(result==0)
+        $('#exp-test-text-result').text('Sin Crecimiento');
+      else if(result<1)
+        $('#exp-test-text-result').text('Crecimiento Desacelerado');
+      else if(result==1)
         $('#exp-test-text-result').text('Crecimiento Lineal');
       else if(result<1.5)
         $('#exp-test-text-result').text('Crecimiento Exponencial Moderado');
