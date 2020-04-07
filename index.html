@@ -338,7 +338,7 @@ position:absolute;
                 <span> días, usando un intervalo de </span><select class="custom-select ml-2 mr-sm-2 form-control" id="exp-test-interval"></select><span> días.</span>
               </form>
               <div class="container-fluid">
-                <b>Serie:</b> <span class="ml-2 mr-sm-2" id="exp-test-serie-result"></span>
+                <b>Intervalos:</b> <span class="ml-2 mr-sm-2" id="exp-test-serie-result"></span>
               </div>
               <div class="container-fluid">
                 <b>Resultado:</b><span class="ml-2 mr-sm-2" id="exp-test-val-result"></span><b>-></b><span class="ml-2 mr-sm-2" id="exp-test-text-result"></span>
@@ -1180,7 +1180,6 @@ position:absolute;
     var accumulates=[]
     function readData() {
       //var table = drawTable(parent);
-      console.log(new_cases_data)
       var last_col = 0
       for(var r=0; r<new_cases_data.length; r++) {
         var cell = new_cases_data[r]["gs$cell"];
@@ -1190,9 +1189,7 @@ position:absolute;
           break;
         }
       }
-      console.log(last_col)
 
-      console.log(new_cases_data.length)
       for(var r=0; r<new_cases_data.length; r++) {
         var cell = new_cases_data[r]["gs$cell"];
         if (cell.row == '22' && cell.col != '1' && parseInt(cell.col) < last_col) {
@@ -1200,7 +1197,7 @@ position:absolute;
           new_cases[cell.col-2]=parseInt(cell["numericValue"]);
         }
       }
-      console.log(new_cases)
+      //console.log(new_cases)
 
       for(var r=0; r<accumulative_cases_data.length; r++) {
         var cell = accumulative_cases_data[r]["gs$cell"];
@@ -1209,7 +1206,7 @@ position:absolute;
           accumulates[cell.col-2]=parseInt(cell["numericValue"]);
         }
       }
-      console.log(accumulates)
+      //console.log(accumulates)
       //drawRow(table, rowData);
     }
 
@@ -1256,7 +1253,7 @@ position:absolute;
           interval_score = 0;
         }
       }
-      console.log(interval_scores)
+      //console.log(interval_scores)
 
       var serie = ''
       var sum = 0
