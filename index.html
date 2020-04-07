@@ -1274,7 +1274,7 @@ position:absolute;
       if(result==0)
         $('#exp-test-text-result').text('Sin Crecimiento');
       else if(result<1)
-        $('#exp-test-text-result').text('Crecimiento Desacelerado' + (increase ? ' (incremento en último intervalo)':''));
+        $('#exp-test-text-result').text('Crecimiento Desacelerado' + (increase ? ' (aumentó en los últimos '+ interval_days + ' días)':''));
       else if(result==1)
         $('#exp-test-text-result').text('Crecimiento Lineal');
       else if(result<1.5)
