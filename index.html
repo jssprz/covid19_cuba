@@ -287,13 +287,10 @@ position:absolute;
 
       <!--Grid row-->
       <div class="row wow fadeIn">
-
         <!--Grid column-->
         <div class="col-md-6 mb-4">
-
           <!--Card-->
           <div class="card" style="height: 420px">
-
             <!--Card content-->
             <div class="card-body">
               <iframe
@@ -303,19 +300,15 @@ position:absolute;
               allowfullscreen="true">
               </iframe>
             </div>
-
           </div>
           <!--/.Card-->
-
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
         <div class="col-md-6 mb-4">
-
           <!--Card-->
           <div class="card" style="height: 420px">
-
             <!--Card content-->
             <div class="card-body">
               <iframe
@@ -325,656 +318,681 @@ position:absolute;
               allowfullscreen="true">
               </iframe>
             </div>
-
           </div>
           <!--/.Card-->
-
         </div>
         <!--Grid column-->
       </div>
       <!--Grid row-->
 
+      <div class="row wow fadeIn justify-content-md-center">
+        <!--Grid column-->
+        <div class="col-7 mb-4">
+          <!--Card-->
+          <div class="card" style="">
+            <!--Card content-->
+            <div class="card-body">
+              <h2 class="card-title">Test Exponencial:</h2>
+              <form class="form-inline">
+                <span>Analizar el comportamiento en los últimos </span><select class="form-control" id="exp-test-days"></select>
+                <span> días, usando un intervalo de </span><select class="form-control" id="exp-test-interval"></select><span> días.</span>
+              </form>
+              <b>Resultado:</b>
+              <span class="" id="exp-test-val-result"></span>
+              <b>-></b>
+              <span class="" id="exp-test-text-result"></span>
+            </div>
+            <!--/.Card-->
+          </div>
+          <!--Grid column-->
+        </div>
+      </div>
+
       <!-- Charts -->
-      <div class="accordion" id="accordionExample">
-        <!-- vs America -->
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                Cuba vs America Central y el Caribe
-              </button>
-            </h5>
-          </div>
-
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body">
-              <div class="row wow">
-                <div class="col-md-8 container-fluid pt-3 pb-3">
-                  <div class="form-check form-check-inline">
-                    <label class="form-check-label" for="inlineRadio1">
-                      <input class="form-check-input" type="radio" name="am_inlineRadioOptions" id="radio_am-100" value="am-100">Desde 100 casos.
-                    </label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <label class="form-check-label" for="inlineRadio2">
-                      <input class="form-check-input" type="radio" name="am_inlineRadioOptions" id="radio_am-100K" value="am-100K">Desde 1 caso por cada 100K habitantes.
-                    </label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <label class="form-check-label" for="inlineRadio3">
-                      <input class="form-check-input" type="radio" name="am_inlineRadioOptions" id="radio_am-1M" value="am-1M">Desde 1 caso por cada 1M habitantes.
-                    </label>
-                  </div>
-                </div>
+      <div class="row wow fadeIn">
+        <div class="col-md-12 mb-4">
+          <div class="accordion" id="accordionExample">
+            <!-- vs America -->
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Cuba vs America Central y el Caribe
+                  </button>
+                </h5>
               </div>
 
-              <!--Grid row from 100-->
-              <div id="am-100" class="row wow fadeIn">
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1493961437&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="row wow">
+                    <div class="col-md-8 container-fluid pt-3 pb-3">
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="inlineRadio1">
+                          <input class="form-check-input" type="radio" name="am_inlineRadioOptions" id="radio_am-100" value="am-100">Desde 100 casos.
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="inlineRadio2">
+                          <input class="form-check-input" type="radio" name="am_inlineRadioOptions" id="radio_am-100K" value="am-100K">Desde 1 caso por cada 100K habitantes.
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="inlineRadio3">
+                          <input class="form-check-input" type="radio" name="am_inlineRadioOptions" id="radio_am-1M" value="am-1M">Desde 1 caso por cada 1M habitantes.
+                        </label>
+                      </div>
                     </div>
-
                   </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
 
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
+                  <!--Grid row from 100-->
+                  <div id="am-100" class="row wow fadeIn">
 
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
 
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=617076826&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1493961437&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+
+                      </div>
+                      <!--/.Card-->
                     </div>
+                    <!--Grid column-->
 
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=617076826&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+
+                      </div>
+                      <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
                   </div>
-                  <!--/.Card-->
+                  <!--Grid row from 100-->
 
+                  <!--Grid row per 100,000-->
+                  <div id="am-100K" class="row wow fadeIn" style="display: none;">
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1846097854&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1578813880&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row per 100,000-->
+
+                  <!--Grid row per 1,000,000-->
+                  <div id="am-1M" class="row wow fadeIn" style="display: none;">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=480013733&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+
+                      </div>
+                      <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=438767711&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+
+                      </div>
+                      <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row per 1,000,000-->
                 </div>
-                <!--Grid column-->
               </div>
-              <!--Grid row from 100-->
-
-              <!--Grid row per 100,000-->
-              <div id="am-100K" class="row wow fadeIn" style="display: none;">
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1846097854&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1578813880&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row per 100,000-->
-
-              <!--Grid row per 1,000,000-->
-              <div id="am-1M" class="row wow fadeIn" style="display: none;">
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=480013733&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-
-                  </div>
-                  <!--/.Card-->
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=438767711&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-
-                  </div>
-                  <!--/.Card-->
-
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row per 1,000,000-->
             </div>
-          </div>
-        </div>
 
-        <!-- vs Europa -->
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Cuba vs Europa
-              </button>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              <div class="row wow">
-                <div class="col-md-8 container-fluid pt-3 pb-3">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="eu_inlineRadioOptions" id="radio_eu-100" value="eu-100" checked="checked">
-                    <label class="form-check-label" for="inlineRadio1">Desde 100 casos.</label>
+            <!-- vs Europa -->
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Cuba vs Europa
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="row wow">
+                    <div class="col-md-8 container-fluid pt-3 pb-3">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="eu_inlineRadioOptions" id="radio_eu-100" value="eu-100" checked="checked">
+                        <label class="form-check-label" for="inlineRadio1">Desde 100 casos.</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="eu_inlineRadioOptions" id="radio_eu-100K" value="eu-100K">
+                        <label class="form-check-label" for="inlineRadio2">Desde 1 caso por cada 100K habitantes.</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="eu_inlineRadioOptions" id="radio_eu-1M" value="eu-1M">
+                        <label class="form-check-label" for="inlineRadio3">Desde 1 caso por cada 1M habitantes.</label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="eu_inlineRadioOptions" id="radio_eu-100K" value="eu-100K">
-                    <label class="form-check-label" for="inlineRadio2">Desde 1 caso por cada 100K habitantes.</label>
+
+                  <!--Grid row from 100-->
+                  <div id="eu-100" class="row wow fadeIn">
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1353975326&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=379806294&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="eu_inlineRadioOptions" id="radio_eu-1M" value="eu-1M">
-                    <label class="form-check-label" for="inlineRadio3">Desde 1 caso por cada 1M habitantes.</label>
+                  <!--Grid row from 100-->
+
+                  <!--Grid row per 100,000-->
+                  <div id="eu-100K" class="row wow fadeIn" style="display: none;">
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=2065739168&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=143822567&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
                   </div>
+                  <!--Grid row per 100,000-->
+
+                  <!--Grid row per 1,000,000-->
+                  <div id="eu-1M" class="row wow fadeIn" style="display: none;">
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=2062090859&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1114966411&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+                      </div>
+                      <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row per 1,000,000-->
+
                 </div>
               </div>
-
-              <!--Grid row from 100-->
-              <div id="eu-100" class="row wow fadeIn">
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1353975326&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=379806294&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row from 100-->
-
-              <!--Grid row per 100,000-->
-              <div id="eu-100K" class="row wow fadeIn" style="display: none;">
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=2065739168&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=143822567&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row per 100,000-->
-
-              <!--Grid row per 1,000,000-->
-              <div id="eu-1M" class="row wow fadeIn" style="display: none;">
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=2062090859&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1114966411&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-                  </div>
-                  <!--/.Card-->
-
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row per 1,000,000-->
-
             </div>
-          </div>
-        </div>
 
-        <!-- vs HSur -->
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Cuba vs Hemisferio Sur
-              </button>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-              <div class="row wow">
-                <div class="col-md-8 container-fluid pt-3 pb-3">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="sur_inlineRadioOptions" id="radio_sur-100" value="sur-100" checked="checked">
-                    <label class="form-check-label" for="inlineRadio1">Desde 100 casos.</label>
+            <!-- vs HSur -->
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Cuba vs Hemisferio Sur
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="row wow">
+                    <div class="col-md-8 container-fluid pt-3 pb-3">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sur_inlineRadioOptions" id="radio_sur-100" value="sur-100" checked="checked">
+                        <label class="form-check-label" for="inlineRadio1">Desde 100 casos.</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sur_inlineRadioOptions" id="radio_sur-100K" value="sur-100K">
+                        <label class="form-check-label" for="inlineRadio2">Desde 1 caso por cada 100K habitantes.</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sur_inlineRadioOptions" id="radio_sur-1M" value="sur-1M">
+                        <label class="form-check-label" for="inlineRadio3">Desde 1 caso por cada 1M habitantes.</label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="sur_inlineRadioOptions" id="radio_sur-100K" value="sur-100K">
-                    <label class="form-check-label" for="inlineRadio2">Desde 1 caso por cada 100K habitantes.</label>
+
+                  <!--Grid row from 100-->
+                  <div id="sur-100" class="row wow fadeIn">
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=215232579&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1108202602&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="sur_inlineRadioOptions" id="radio_sur-1M" value="sur-1M">
-                    <label class="form-check-label" for="inlineRadio3">Desde 1 caso por cada 1M habitantes.</label>
+                  <!--Grid row from 100-->
+
+                  <!--Grid row per 100,000-->
+                  <div id="sur-100K" class="row wow fadeIn" style="display: none;">
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1453686349&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1691271200&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
                   </div>
+                  <!--Grid row per 100,000-->
+
+                  <!--Grid row per 1,000,000-->
+                  <div id="sur-1M" class="row wow fadeIn" style="display: none;">
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1198852034&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1010876309&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+
+                      </div>
+                      <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row per 1,000,000-->
                 </div>
               </div>
-
-              <!--Grid row from 100-->
-              <div id="sur-100" class="row wow fadeIn">
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=215232579&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1108202602&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row from 100-->
-
-              <!--Grid row per 100,000-->
-              <div id="sur-100K" class="row wow fadeIn" style="display: none;">
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1453686349&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1691271200&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row per 100,000-->
-
-              <!--Grid row per 1,000,000-->
-              <div id="sur-1M" class="row wow fadeIn" style="display: none;">
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1198852034&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1010876309&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-
-                  </div>
-                  <!--/.Card-->
-
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row per 1,000,000-->
             </div>
-          </div>
-        </div>
 
-        <!-- vs USA-UK -->
-        <div class="card">
-          <div class="card-header" id="headingFour">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Cuba vs Estados Unidos y Reino Unido
-              </button>
-            </h5>
-          </div>
-          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-            <div class="card-body">
-              <div class="row wow">
-                <div class="col-md-8 container-fluid pt-3 pb-3">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="usauk_inlineRadioOptions" id="radio_usauk-100" value="usauk-100" checked="checked">
-                    <label class="form-check-label" for="inlineRadio1">Desde 100 casos.</label>
+            <!-- vs USA-UK -->
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Cuba vs Estados Unidos y Reino Unido
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="row wow">
+                    <div class="col-md-8 container-fluid pt-3 pb-3">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="usauk_inlineRadioOptions" id="radio_usauk-100" value="usauk-100" checked="checked">
+                        <label class="form-check-label" for="inlineRadio1">Desde 100 casos.</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="usauk_inlineRadioOptions" id="radio_usauk-100K" value="usauk-100K">
+                        <label class="form-check-label" for="inlineRadio2">Desde 1 caso por cada 100K habitantes.</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="usauk_inlineRadioOptions" id="radio_usauk-1M" value="usauk-1M">
+                        <label class="form-check-label" for="inlineRadio3">Desde 1 caso por cada 1M habitantes.</label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="usauk_inlineRadioOptions" id="radio_usauk-100K" value="usauk-100K">
-                    <label class="form-check-label" for="inlineRadio2">Desde 1 caso por cada 100K habitantes.</label>
+
+                  <!--Grid row from 100-->
+                  <div id="usauk-100" class="row wow fadeIn">
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=366944384&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=239165050&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+
+                      </div>
+                      <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="usauk_inlineRadioOptions" id="radio_usauk-1M" value="usauk-1M">
-                    <label class="form-check-label" for="inlineRadio3">Desde 1 caso por cada 1M habitantes.</label>
+                  <!--Grid row from 100-->
+
+                  <!--Grid row per 100,000-->
+                  <div id="usauk-100K" class="row wow fadeIn" style="display: none;">
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1332981146&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1612448636&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
                   </div>
+                  <!--Grid row per 100,000-->
+
+                  <!--Grid row per 1,000,000-->
+                  <div id="usauk-1M" class="row wow fadeIn" style="display: none;">
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=235051273&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                      <!--Card-->
+                      <div class="card" style="height: 420px">
+                        <!--Card content-->
+                        <div class="card-body">
+                          <iframe
+                          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1639523795&format=interactive"
+                          height="100%"
+                          width="100%"
+                          allowfullscreen="true">
+                          </iframe>
+                        </div>
+                      </div>
+                      <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row per 1,000,000-->
                 </div>
               </div>
-
-              <!--Grid row from 100-->
-              <div id="usauk-100" class="row wow fadeIn">
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=366944384&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=239165050&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-
-                  </div>
-                  <!--/.Card-->
-
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row from 100-->
-
-              <!--Grid row per 100,000-->
-              <div id="usauk-100K" class="row wow fadeIn" style="display: none;">
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1332981146&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1612448636&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row per 100,000-->
-
-              <!--Grid row per 1,000,000-->
-              <div id="usauk-1M" class="row wow fadeIn" style="display: none;">
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=235051273&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card" style="height: 420px">
-                    <!--Card content-->
-                    <div class="card-body">
-                      <iframe
-                      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTatmk3Eyj6jUizOq120GuFYY5XNnX2ITVZEUar1-agpCfR-gQTrV92Vj3Er0uhNqtWGcSAtfJEdeik/pubchart?oid=1639523795&format=interactive"
-                      height="100%"
-                      width="100%"
-                      allowfullscreen="true">
-                      </iframe>
-                    </div>
-                  </div>
-                  <!--/.Card-->
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row per 1,000,000-->
             </div>
           </div>
         </div>
@@ -988,7 +1006,7 @@ position:absolute;
             <div class="card-body">
               <h2 class="card-title">Importante-1:</h2>
               <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
-              <p class="card-text">Definimos el tiempo cero al momento en que un territorio alcanza: los 100 casos totales, 1 caso por cada 100,000 habitantes, y 1 caso por cada millón de habitantes. Esto tiene por objetivo poder comparar de mejor forma la evolución de los países desde que tienen una curva epidémica bien establecida. En este sentido, consideramos que comparar desde el primer caso en cada territorio no produce comparaciones justas, ya que, entre otros factores, en algunos territorios los primeros casos fueron descartados dado el desconocimiento sobre la COVID-19.
+              <p class="card-text">Definimos el tiempo cero al momento en que un territorio alcanza: los 100 casos totales, 1 caso por cada 100,000 habitantes, o 1 caso por cada millón de habitantes. Esto tiene por objetivo poder comparar de mejor forma la evolución de los países desde que tienen una curva epidémica bien establecida. En este sentido, consideramos que comparar desde el primer caso en cada territorio no produce comparaciones justas, ya que, entre otros factores, en algunos territorios los primeros casos fueron descartados dado el desconocimiento sobre la COVID-19.
               </p>
               <!--<a href="#" class="card-link">Card link</a>
               <a href="#" class="card-link">Another link</a>-->
@@ -1144,6 +1162,118 @@ position:absolute;
         });
     });
   </script>
+
+  <script type="text/javascript">
+    var new_cases_data = null;
+    function doNewCasesData(json) {
+      new_cases_data = json.feed.entry;
+    }
+
+    var accumulative_cases_data = null;
+    function doAccumulativeCasesData(json) {
+      accumulative_cases_data = json.feed.entry;
+    }
+
+    var new_cases=[];
+    var accumulates=[]
+    function readData() {
+      //var table = drawTable(parent);
+      console.log(new_cases_data)
+      var last_col = 0
+      for(var r=0; r<new_cases_data.length; r++) {
+        var cell = new_cases_data[r]["gs$cell"];
+        var val = parseInt(cell["numericValue"]);
+        if (cell["$t"] == "TOTAL"){
+          last_col = cell.col;
+          break;
+        }
+      }
+      console.log(last_col)
+
+      console.log(new_cases_data.length)
+      for(var r=0; r<new_cases_data.length; r++) {
+        var cell = new_cases_data[r]["gs$cell"];
+        if (cell.row == '22' && cell.col != '1' && parseInt(cell.col) < last_col) {
+          //drawRow(table, rowData);
+          new_cases[cell.col-2]=parseInt(cell["numericValue"]);
+        }
+      }
+      console.log(new_cases)
+
+      for(var r=0; r<accumulative_cases_data.length; r++) {
+        var cell = accumulative_cases_data[r]["gs$cell"];
+        if (cell.row == '22' && cell.col != '1' && parseInt(cell.col) < last_col) {
+          //drawRow(table, rowData);
+          accumulates[cell.col-2]=parseInt(cell["numericValue"]);
+        }
+      }
+      console.log(accumulates)
+      //drawRow(table, rowData);
+    }
+
+    var last_days = 0;
+    var interval_days = 0;
+    function initializeExpTestFields(){
+      var days_select = $('#exp-test-days');
+      var interval_select = $('#exp-test-interval');
+
+      for(var i=4; i<=new_cases.length; i++){
+        days_select.append('<option value="'+i+'">'+i+'</option>');
+      }
+
+      days_select.on('change', function() {
+        interval_select.empty();
+        last_days = this.value;
+        for(var i=2; i<=this.value/2; i++){
+          interval_select.append('<option value="'+i+'">'+i+'</option>');
+        }
+        if(interval_days<=this.value/2)
+          interval_select.val(interval_days).change();
+        else
+          interval_select.val(2).change();
+      }).val(21).change();
+
+      interval_select.on('change', function(){
+        interval_days = this.value;
+        compute_exp_score();
+      }).val(4).change();
+    }
+
+    $(document).ready(function(){
+      readData();
+      initializeExpTestFields();
+    });
+
+    function compute_exp_score(){
+      if(last_days==0 || interval_days==0)
+        return
+      var interval_cases=0
+      var interval_scores=[]
+      for(var i=1;i<=last_days;i++){
+        interval_cases += new_cases[new_cases.length-i];
+        if(i%interval_days==0){
+          interval_scores.push(interval_cases / accumulates[accumulates.length-i-1]);
+          interval_cases = 0;
+        }
+      }
+      console.log(interval_scores)
+
+      var sum = 0;
+      for(var i=1;i<interval_scores.length;i++)
+        sum += interval_scores[i];
+      var result = (sum/interval_scores.length).toFixed(2);
+      $('#exp-test-val-result').text(result)
+      if(result<1)
+        $('#exp-test-text-result').text('Comportamiento Lineal');
+      else if(result<1.5)
+        $('#exp-test-text-result').text('Comportamiento Exponencial Moderado');
+      else
+        $('#exp-test-text-result').text('Comportamiento Exponencial Descontrolado');
+    }
+  </script>
+
+  <script src="https://spreadsheets.google.com/feeds/cells/1F7BWnqdgX1kHZrR9cSDQUznA6Dk5O3m3pPZMVF8OBgU/4/public/values?alt=json-in-script&callback=doNewCasesData"></script>
+  <script src="https://spreadsheets.google.com/feeds/cells/1F7BWnqdgX1kHZrR9cSDQUznA6Dk5O3m3pPZMVF8OBgU/2/public/values?alt=json-in-script&callback=doAccumulativeCasesData"></script>
 </body>
 
 </html>
