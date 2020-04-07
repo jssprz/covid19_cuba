@@ -332,15 +332,17 @@ position:absolute;
           <div class="card" style="">
             <!--Card content-->
             <div class="card-body">
-              <h2 class="card-title">Test Exponencial:</h2>
+              <h2 class="card-title">Velocidad de incremento de casos en Cuba:</h2>
               <form class="form-inline">
-                <span>Analizar el comportamiento en los últimos </span><select class="form-control" id="exp-test-days"></select>
-                <span> días, usando un intervalo de </span><select class="form-control" id="exp-test-interval"></select><span> días.</span>
+                <span>Analizar el comportamiento en los últimos </span><select class="custom-select ml-2 mr-sm-2 form-control" id="exp-test-days"></select>
+                <span> días, usando un intervalo de </span><select class="custom-select ml-2 mr-sm-2 form-control" id="exp-test-interval"></select><span> días.</span>
               </form>
-              <b>Resultado:</b>
-              <span class="" id="exp-test-val-result"></span>
-              <b>-></b>
-              <span class="" id="exp-test-text-result"></span>
+              <div class="container-fluid">
+                <b>Serie:</b> <span class="ml-2 mr-sm-2" id="exp-test-serie-result"></span>
+              </div>
+              <div class="container-fluid">
+                <b>Resultado:</b><span class="ml-2 mr-sm-2" id="exp-test-val-result"></span><b>-></b><span class="ml-2 mr-sm-2" id="exp-test-text-result"></span>
+              </div>
             </div>
             <!--/.Card-->
           </div>
@@ -385,7 +387,7 @@ position:absolute;
                   </div>
 
                   <!--Grid row from 100-->
-                  <div id="am-100" class="row wow fadeIn">
+                  <div id="am-100" class="row wow fadeIn" style="display: none;">
 
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
@@ -433,7 +435,7 @@ position:absolute;
                   <!--Grid row from 100-->
 
                   <!--Grid row per 100,000-->
-                  <div id="am-100K" class="row wow fadeIn" style="display: none;">
+                  <div id="am-100K" class="row wow fadeIn">
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
 
@@ -544,7 +546,7 @@ position:absolute;
                   <div class="row wow">
                     <div class="col-md-8 container-fluid pt-3 pb-3">
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="eu_inlineRadioOptions" id="radio_eu-100" value="eu-100" checked="checked">
+                        <input class="form-check-input" type="radio" name="eu_inlineRadioOptions" id="radio_eu-100" value="eu-100">
                         <label class="form-check-label" for="inlineRadio1">Desde 100 casos.</label>
                       </div>
                       <div class="form-check form-check-inline">
@@ -559,7 +561,7 @@ position:absolute;
                   </div>
 
                   <!--Grid row from 100-->
-                  <div id="eu-100" class="row wow fadeIn">
+                  <div id="eu-100" class="row wow fadeIn" style="display: none;">
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
                       <!--Card-->
@@ -599,7 +601,7 @@ position:absolute;
                   <!--Grid row from 100-->
 
                   <!--Grid row per 100,000-->
-                  <div id="eu-100K" class="row wow fadeIn" style="display: none;">
+                  <div id="eu-100K" class="row wow fadeIn">
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
                       <!--Card-->
@@ -699,7 +701,7 @@ position:absolute;
                   <div class="row wow">
                     <div class="col-md-8 container-fluid pt-3 pb-3">
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="sur_inlineRadioOptions" id="radio_sur-100" value="sur-100" checked="checked">
+                        <input class="form-check-input" type="radio" name="sur_inlineRadioOptions" id="radio_sur-100" value="sur-100">
                         <label class="form-check-label" for="inlineRadio1">Desde 100 casos.</label>
                       </div>
                       <div class="form-check form-check-inline">
@@ -714,7 +716,7 @@ position:absolute;
                   </div>
 
                   <!--Grid row from 100-->
-                  <div id="sur-100" class="row wow fadeIn">
+                  <div id="sur-100" class="row wow fadeIn" style="display: none;">
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
                       <!--Card-->
@@ -754,7 +756,7 @@ position:absolute;
                   <!--Grid row from 100-->
 
                   <!--Grid row per 100,000-->
-                  <div id="sur-100K" class="row wow fadeIn" style="display: none;">
+                  <div id="sur-100K" class="row wow fadeIn">
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
                       <!--Card-->
@@ -852,7 +854,7 @@ position:absolute;
                   <div class="row wow">
                     <div class="col-md-8 container-fluid pt-3 pb-3">
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="usauk_inlineRadioOptions" id="radio_usauk-100" value="usauk-100" checked="checked">
+                        <input class="form-check-input" type="radio" name="usauk_inlineRadioOptions" id="radio_usauk-100" value="usauk-100">
                         <label class="form-check-label" for="inlineRadio1">Desde 100 casos.</label>
                       </div>
                       <div class="form-check form-check-inline">
@@ -867,7 +869,7 @@ position:absolute;
                   </div>
 
                   <!--Grid row from 100-->
-                  <div id="usauk-100" class="row wow fadeIn">
+                  <div id="usauk-100" class="row wow fadeIn" style="display: none;">
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
                       <!--Card-->
@@ -912,7 +914,7 @@ position:absolute;
                   <!--Grid row from 100-->
 
                   <!--Grid row per 100,000-->
-                  <div id="usauk-100K" class="row wow fadeIn" style="display: none;">
+                  <div id="usauk-100K" class="row wow fadeIn">
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
                       <!--Card-->
@@ -1127,7 +1129,7 @@ position:absolute;
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
+  <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -1158,7 +1160,7 @@ position:absolute;
             }
           }
           if(!initialized)
-            $(radios[0]).prop("checked", true);
+            $(radios[1]).prop("checked", true);
         });
     });
   </script>
@@ -1224,7 +1226,7 @@ position:absolute;
       days_select.on('change', function() {
         interval_select.empty();
         last_days = this.value;
-        for(var i=2; i<=this.value/2; i++){
+        for(var i=1; i<=this.value/2; i++){
           interval_select.append('<option value="'+i+'">'+i+'</option>');
         }
         if(interval_days<=this.value/2)
@@ -1236,7 +1238,7 @@ position:absolute;
       interval_select.on('change', function(){
         interval_days = this.value;
         compute_exp_score();
-      }).val(4).change();
+      }).val(3).change();
     }
 
     $(document).ready(function(){
@@ -1258,17 +1260,23 @@ position:absolute;
       }
       console.log(interval_scores)
 
-      var sum = 0;
-      for(var i=1;i<interval_scores.length;i++)
+      var serie = ''
+      var sum = 0
+      for(var i=interval_scores.length-1; i>=0;i--){
         sum += interval_scores[i];
+        serie += accumulates[accumulates.length-(i+1)*interval_days-1] + ',  ';
+      }
+      serie += accumulates[accumulates.length-1];
+        
       var result = (sum/interval_scores.length).toFixed(2);
-      $('#exp-test-val-result').text(result)
+      $('#exp-test-serie-result').text(serie);
+      $('#exp-test-val-result').text(result);
       if(result<1)
-        $('#exp-test-text-result').text('Comportamiento Lineal');
+        $('#exp-test-text-result').text('Crecimiento Lineal');
       else if(result<1.5)
-        $('#exp-test-text-result').text('Comportamiento Exponencial Moderado');
+        $('#exp-test-text-result').text('Crecimiento Exponencial Moderado');
       else
-        $('#exp-test-text-result').text('Comportamiento Exponencial Descontrolado');
+        $('#exp-test-text-result').text('Crecimiento Exponencial Descontrolado');
     }
   </script>
 
