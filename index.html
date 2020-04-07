@@ -1262,18 +1262,19 @@ position:absolute;
       var sum = 0
       for(var i=interval_scores.length-1; i>=0;i--){
         sum += interval_scores[i];
-        serie += interval_scores[i].toFixed(2) + (i!=0 ? ',  ' : '');
+        serie += interval_scores[i].toFixed(3) + (i!=0 ? ',  ' : '');
         //serie += accumulates[accumulates.length-(i+1)*interval_days-1] + ',  ';
       }
       //serie += accumulates[accumulates.length-1];
         
-      var result = (sum/interval_scores.length).toFixed(2);
+      var result = (sum/interval_scores.length).toFixed(3);
+      var increase = interval_scores[0] > interval_scores[1]
       $('#exp-test-serie-result').text(serie);
       $('#exp-test-val-result').text(result);
       if(result==0)
         $('#exp-test-text-result').text('Sin Crecimiento');
       else if(result<1)
-        $('#exp-test-text-result').text('Crecimiento Desacelerado');
+        $('#exp-test-text-result').text('Crecimiento Desacelerado' + (increase ? ' (incremento en último intervalo)':''));
       else if(result==1)
         $('#exp-test-text-result').text('Crecimiento Lineal');
       else if(result<1.5)
