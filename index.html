@@ -338,10 +338,10 @@ position:absolute;
                 <span> días, usando un intervalo de </span><select class="custom-select ml-2 mr-sm-2 form-control" id="exp-test-interval"></select><span> días.</span>
               </form>
               <div class="container-fluid">
-                <b>Parciales:</b> <span class="ml-2 mr-sm-2" id="exp-test-serie-result"></span>
+                <b>Incrementos Parciales:</b> <span class="ml-2 mr-sm-2" id="exp-test-serie-result"></span>
               </div>
               <div class="container-fluid">
-                <b>Resultado:</b><span class="ml-2 mr-sm-2" id="exp-test-val-result"></span><b>-></b><span class="ml-2 mr-sm-2" id="exp-test-text-result"></span>
+                <b>Promedio:</b><span class="ml-2 mr-sm-2" id="exp-test-val-result"></span><b>--></b><span class="ml-3 mr-3 sm-2" id="exp-test-text-result"></span>
               </div>
             </div>
             <!--/.Card-->
@@ -1271,7 +1271,7 @@ position:absolute;
       if(result==0)
         $('#exp-test-text-result').text('Sin Crecimiento');
       else if(result<1)
-        $('#exp-test-text-result').text('Crecimiento Desacelerado' + (increase ? ' (aumentó en los últimos '+ interval_days + ' días)':''));
+        $('#exp-test-text-result').text('Crecimiento Lento' + (increase ? ' (existe un aumento en el último intervalo con respecto al anterior)':''));
       //else if(result==1)
         //$('#exp-test-text-result').text('Crecimiento Lineal');
       else if(result<1.5)
