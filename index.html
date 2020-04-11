@@ -1370,21 +1370,21 @@ position:absolute;
 
       for(var r=0; r<new_cases_data.length; r++) {
         var cell = new_cases_data[r]["gs$cell"];
-        if (cell.row == '22' && cell.col != '1' && parseInt(cell.col) < last_col) {
+        if (cell.row == '19' && cell.col != '1' && parseInt(cell.col) < last_col) {
           //drawRow(table, rowData);
           new_cases[cell.col-2]=parseInt(cell["numericValue"]);
         }
       }
-      //console.log(new_cases)
+      console.log(new_cases)
 
       for(var r=0; r<accumulative_cases_data.length; r++) {
         var cell = accumulative_cases_data[r]["gs$cell"];
-        if (cell.row == '22' && cell.col != '1' && parseInt(cell.col) < last_col) {
+        if (cell.row == '19' && cell.col != '1' && parseInt(cell.col) < last_col) {
           //drawRow(table, rowData);
           accumulates[cell.col-2]=parseInt(cell["numericValue"]);
         }
       }
-      //console.log(accumulates)
+      console.log(accumulates)
       //drawRow(table, rowData);
     }
 
